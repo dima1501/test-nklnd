@@ -11,21 +11,20 @@ block content
 		include ../blocks/modules/welcome/welcome
 		include ../blocks/modules/technology/technology
 
-		section.section#test-1()
+		section(style='height: 100dvh').section#test-1
 			.container
 				h2.section__title Test section 1
-		section.section#test-2()
+		section(style='height: 100dvh').section#test-2
 			.container
 				h2.section__title Test section 2
-		section.section#test-3()
+		section(style='height: 100dvh').section#test-3
 			.container
 				h2.section__title Test section 3
-		section.section#test-4()
+		section(style='height: 100dvh').section#test-4
 			.container
 				h2.section__title Test section 4
 
 		include ../blocks/modules/pages/pages
 
 block scripts
-	script(src="js/vendor.js")
 	script(src="js/main.js")

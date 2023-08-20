@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     const menuLinks = document.querySelectorAll('.js-scroll-link');
     const header = document.querySelector('.js-header-menu');
+    const burger = document.querySelector('.js-menu-burger');
   
     function highlightMenuItem() {
       let currentSection = null;
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
           });
             header.classList.remove('_opened');
+            burger.classList.remove('_active');
         }
       });
     });
