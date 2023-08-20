@@ -1,0 +1,72 @@
+.btn {
+    font-family: 'Museo Sans Cyrillic';
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s, transform .1s;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &._white {
+        background: #FFF;
+        color: #FF3047;
+
+        &:hover {
+            background: #feedef;
+        }
+    }
+
+    &._red {
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #FF2A42;
+
+        @media (min-width: 1024px) {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &:hover {
+            background-color: #ff4c61;
+        }
+    }
+
+    &._small {
+        padding: 12px 21px;
+        font-size: 14px;
+        letter-spacing: 0.55px;
+        border-radius: 5px;
+    }
+
+    &._big {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 12px 18px;
+        font-size: 13px;
+        letter-spacing: 0.6px;
+        line-height: 1;
+
+        @media (min-width: 1024px) {
+            padding: 16px 31px;
+            height: 70px;
+            font-size: 20px;
+            min-width: 357px;
+        }
+    }
+
+    &__icon {
+        max-width: 16px;
+        max-height: 38px;
+        margin-right: 17px;
+        flex-shrink: 0;
+
+        @media (min-width: 1024px) {
+            max-width: 28px;
+            margin-right: 20px;
+        }
+    }
+}

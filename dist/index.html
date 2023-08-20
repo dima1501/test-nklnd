@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header js-header">
+      <div class="header__inner"> <a class="header__logo js-scroll-link" href="#main"><img class="header__logo-pic" src="img/svg/logo.svg" alt="" loading="lazy"></a>
+        <div class="header__controls js-header-menu">
+          <nav class="header__nav"> 
+            <ul class="header__nav-ul">
+              <li class="header__nav-li"><a class="header__link js-scroll-link" href="#tech">Технологии</a></li>
+              <li class="header__nav-li"><a class="header__link js-scroll-link" href="#test-1">Наши принципы</a></li>
+              <li class="header__nav-li"><a class="header__link js-scroll-link" href="#test-2">Интеграция</a></li>
+              <li class="header__nav-li"><a class="header__link js-scroll-link" href="#test-3">Управление и интересы</a></li>
+              <li class="header__nav-li"><a class="header__link js-scroll-link" href="#test-4">События</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn">
+            <button class="btn _white _small">Обсудить проект</button>
+          </div>
+        </div>
+        <div class="header__burger js-menu-burger">
+          <div class="header__burger-bar"></div>
+          <div class="header__burger-bar"></div>
+          <div class="header__burger-bar"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="welcome" id="main">
+        <picture class="welcome__bg">
+          <source srcset="img/welcome-bg.webp" type="image/webp"><img src="img/welcome-bg.jpg" alt="Welcome Background" loading="lazy">
+        </picture>
+        <!-- Не стал добавлять poster, тк он не поддерживает разделение webp/jpg-->
+        <video class="welcome__video" src="assets/moscow-video.mp4" poster="" autoplay muted loop></video>
+        <div class="welcome__inner">
+          <p class="welcome__aside-note">Технологии  и  опыт</p>
+          <div class="container">
+            <div class="welcome__content">
+              <p class="welcome__note">1995 - 2019</p>
+              <h1 class="welcome__title">Признанные специалисты, оказавшие существенное влияние на формирование отечественной IT-индустрии. </h1>
+              <p class="welcome__text">С 1995 года разрабатываем проекты городского масштаба: Data центры, дисрибуцию, розничные сети, ЦОД.  </p>
+              <button class="btn _big _red">
+                <svg class="btn__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon-pdf"></use>
+                </svg><span class="btn__text">Презентация компании</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="tech">
+        <div class="container">
+          <h2 class="section__title">Передовые технологии</h2>
+          <div class="section__content">
+            <div class="tech-previews">
+              <div class="tech-preview _active">
+                <svg class="tech-preview__pic">
+                  <use xlink:href="img/sprites/sprite.svg#icon-tech-1"></use>
+                </svg>
+                <p class="tech-preview__text">IoT / M2M <br> Интернет вещей и межмашинное взаимодействие</p>
+              </div>
+              <div class="tech-preview">
+                <svg class="tech-preview__pic">
+                  <use xlink:href="img/sprites/sprite.svg#icon-tech-2"></use>
+                </svg>
+                <p class="tech-preview__text">ML/AI <br> Искуственный интеллект и машинное обучение</p>
+              </div>
+              <div class="tech-preview">
+                <svg class="tech-preview__pic">
+                  <use xlink:href="img/sprites/sprite.svg#icon-tech-3"></use>
+                </svg>
+                <p class="tech-preview__text">Cloud computing, VDI <br> Виртуализация вычислительных ресурсов, систем хранения данных и рабочих мест</p>
+              </div>
+              <div class="tech-preview">
+                <svg class="tech-preview__pic">
+                  <use xlink:href="img/sprites/sprite.svg#icon-tech-4"></use>
+                </svg>
+                <p class="tech-preview__text">Edge computing <br> Организация вычислений/обработки данных на “границе сети”</p>
+              </div>
+            </div>
+            <div class="tech-slider">
+              <div class="tech-slider__arr _prev js-prev-slide">
+                <svg class="tech-slider__arr-icon">
+                  <use xlink:href="img/sprites/sprite.svg#arr-left"></use>
+                </svg>
+              </div>
+              <div class="tech-slider__arr _next js-next-slide">
+                <svg class="tech-slider__arr-icon">
+                  <use xlink:href="img/sprites/sprite.svg#arr-right"></use>
+                </svg>
+              </div>
+              <div class="tech-slider__slide _active">
+                <div class="tech-slider__pic"><img class="tech-slider__pic-image" src="img/svg/tech-slide-1.svg" alt="" loading="lazy"></div>
+                <div class="tech-slider__content">
+                  <div class="tech-slider__category">IoT / M2M</div>
+                  <h3 class="tech-slider__title">Интернет вещей и межмашинное взаимодействие</h3>
+                  <p class="tech-slider__text">Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). </p>
+                </div>
+              </div>
+              <div class="tech-slider__slide">
+                <div class="tech-slider__pic"><img class="tech-slider__pic-image" src="img/svg/tech-slide-2.svg" alt="" loading="lazy"></div>
+                <div class="tech-slider__content">
+                  <div class="tech-slider__category">ML/AI</div>
+                  <h3 class="tech-slider__title">Искуственный интеллект и машинное обучение</h3>
+                  <p class="tech-slider__text">Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). </p>
+                </div>
+              </div>
+              <div class="tech-slider__slide">
+                <div class="tech-slider__pic"><img class="tech-slider__pic-image" src="img/svg/tech-slide-3.svg" alt="" loading="lazy"></div>
+                <div class="tech-slider__content">
+                  <div class="tech-slider__category">Cloud computing, VDI</div>
+                  <h3 class="tech-slider__title">Виртуализация вычислительных ресурсов, систем хранения данных и рабочих мест</h3>
+                  <p class="tech-slider__text">Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). </p>
+                </div>
+              </div>
+              <div class="tech-slider__slide">
+                <div class="tech-slider__pic"><img class="tech-slider__pic-image" src="img/svg/tech-slide-4.svg" alt="" loading="lazy"></div>
+                <div class="tech-slider__content">
+                  <div class="tech-slider__category">Edge computing</div>
+                  <h3 class="tech-slider__title">Организация вычислений/обработки данных на “границе сети”</h3>
+                  <p class="tech-slider__text">Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="test-1">
+        <div class="container">
+          <h2 class="section__title">Test section 1</h2>
+        </div>
+      </section>
+      <section class="section" id="test-2">
+        <div class="container">
+          <h2 class="section__title">Test section 2</h2>
+        </div>
+      </section>
+      <section class="section" id="test-3">
+        <div class="container">
+          <h2 class="section__title">Test section 3</h2>
+        </div>
+      </section>
+      <section class="section" id="test-4">
+        <div class="container">
+          <h2 class="section__title">Test section 4</h2>
+        </div>
+      </section>
+      <div class="pages js-pages"><a class="pages__item _active js-scroll-link" href="#main">01</a><a class="pages__item js-scroll-link" href="#tech">02</a><a class="pages__item js-scroll-link" href="#test-1">03</a><a class="pages__item js-scroll-link" href="#test-2">04</a><a class="pages__item js-scroll-link" href="#test-3">05</a><a class="pages__item js-scroll-link" href="#test-4">06</a></div>
+    </main>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

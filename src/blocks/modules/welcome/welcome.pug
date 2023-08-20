@@ -1,0 +1,17 @@
+section.welcome#main
+    picture.welcome__bg
+        source(srcset='img/welcome-bg.webp', type='image/webp')
+        img(src='img/welcome-bg.jpg', alt='Welcome Background' loading="lazy")
+    // Не стал добавлять poster, тк он не поддерживает разделение webp/jpg
+    video(src="assets/moscow-video.mp4" poster="" autoplay muted loop).welcome__video
+    .welcome__inner
+        p.welcome__aside-note Технологии  и  опыт
+        .container
+            .welcome__content
+                p.welcome__note 1995 - 2019
+                h1.welcome__title Признанные специалисты, оказавшие существенное влияние на формирование отечественной IT-индустрии. 
+                p.welcome__text С 1995 года разрабатываем проекты городского масштаба: Data центры, дисрибуцию, розничные сети, ЦОД.  
+                button.btn._big._red
+                    svg.btn__icon
+                        use(xlink:href="img/sprites/sprite.svg#icon-pdf")
+                    span.btn__text Презентация компании

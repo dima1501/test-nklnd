@@ -1,0 +1,65 @@
+section.section#tech
+    .container
+        h2.section__title Передовые технологии
+        .section__content
+            .tech-previews
+                .tech-preview._active
+                    svg.tech-preview__pic
+                        use(xlink:href="img/sprites/sprite.svg#icon-tech-1")
+                    p.tech-preview__text IoT / M2M <br> Интернет вещей и межмашинное взаимодействие
+                .tech-preview
+                    svg.tech-preview__pic
+                        use(xlink:href="img/sprites/sprite.svg#icon-tech-2")
+                    p.tech-preview__text ML/AI <br> Искуственный интеллект и машинное обучение
+                .tech-preview
+                    svg.tech-preview__pic
+                        use(xlink:href="img/sprites/sprite.svg#icon-tech-3")
+                    p.tech-preview__text Cloud computing, VDI <br> Виртуализация вычислительных ресурсов, систем хранения данных и рабочих мест
+                .tech-preview
+                    svg.tech-preview__pic
+                        use(xlink:href="img/sprites/sprite.svg#icon-tech-4")
+                    p.tech-preview__text Edge computing <br> Организация вычислений/обработки данных на “границе сети”
+
+            .tech-slider
+                .tech-slider__arr._prev.js-prev-slide
+                    svg.tech-slider__arr-icon
+                        use(xlink:href="img/sprites/sprite.svg#arr-left")
+                .tech-slider__arr._next.js-next-slide
+                    svg.tech-slider__arr-icon
+                        use(xlink:href="img/sprites/sprite.svg#arr-right")
+
+                .tech-slider__slide._active
+                    .tech-slider__pic
+                        img(src="img/svg/tech-slide-1.svg", alt="" loading="lazy").tech-slider__pic-image
+                    .tech-slider__content
+                        .tech-slider__category IoT / M2M
+                        h3.tech-slider__title Интернет вещей и межмашинное взаимодействие
+                        p.tech-slider__text Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). 
+
+                .tech-slider__slide
+                    .tech-slider__pic
+                        img(src="img/svg/tech-slide-2.svg", alt="" loading="lazy").tech-slider__pic-image
+                    .tech-slider__content
+                        .tech-slider__category ML/AI
+                        h3.tech-slider__title Искуственный интеллект и машинное обучение
+                        p.tech-slider__text Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). 
+
+                .tech-slider__slide
+                    .tech-slider__pic
+                        img(src="img/svg/tech-slide-3.svg", alt="" loading="lazy").tech-slider__pic-image
+                    .tech-slider__content
+                        .tech-slider__category Cloud computing, VDI
+                        h3.tech-slider__title Виртуализация вычислительных ресурсов, систем хранения данных и рабочих мест
+                        p.tech-slider__text Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). 
+
+                .tech-slider__slide
+                    .tech-slider__pic
+                        img(src="img/svg/tech-slide-4.svg", alt="" loading="lazy").tech-slider__pic-image
+                    .tech-slider__content
+                        .tech-slider__category Edge computing
+                        h3.tech-slider__title Организация вычислений/обработки данных на “границе сети”
+                        p.tech-slider__text Применение алгоритмов и фреймворков машинного обучения для обработки данных на edge. Прежде всего, видеоданных (изображений). 
+
+
+                
+                
