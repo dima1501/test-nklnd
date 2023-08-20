@@ -27,7 +27,7 @@
   </head>
   <body>
     <header class="header js-header">
-      <div class="header__inner"> <a class="header__logo js-scroll-link" href="#main"><img class="header__logo-pic" src="img/svg/logo.svg" alt="" loading="lazy"></a>
+      <div class="header__inner"> <a class="header__logo js-scroll-link" href="#main"><img class="header__logo-pic" src="img/svg/logo.svg" alt="" loading="lazy" width="112" height="14"></a>
         <div class="header__controls js-header-menu">
           <nav class="header__nav"> 
             <ul class="header__nav-ul">
@@ -55,7 +55,7 @@
           <source srcset="img/welcome-bg.webp" type="image/webp"><img src="img/welcome-bg.jpg" alt="Welcome Background" loading="lazy">
         </picture>
         <!-- Не стал добавлять poster, тк он не поддерживает разделение webp/jpg-->
-        <video class="welcome__video" src="moscow-video.mp4" poster="" autoplay muted loop></video>
+        <video class="welcome__video" src="moscow-video.mp4" poster="" preload="none" autoplay muted loop></video>
         <div class="welcome__inner">
           <p class="welcome__aside-note">Технологии  и  опыт</p>
           <div class="container">
@@ -171,6 +171,6 @@
       </section>
       <div class="pages js-pages"><a class="pages__item _active js-scroll-link" href="#main">01</a><a class="pages__item js-scroll-link" href="#tech">02</a><a class="pages__item js-scroll-link" href="#test-1">03</a><a class="pages__item js-scroll-link" href="#test-2">04</a><a class="pages__item js-scroll-link" href="#test-3">05</a><a class="pages__item js-scroll-link" href="#test-4">06</a></div>
     </main>
-    <script src="js/main.min.js"></script>
+    <script defer src="js/main.min.js"></script>
   </body>
 </html>
